@@ -1,0 +1,28 @@
+---
+import GraphicSpecies from "../../components/GraphicSpecies.astro";
+---
+
+<nav class="species-nav">
+    <a href="/species/Adelie">Adelie</a>
+    <a href="/species/Gentoo">Gentoo</a>
+    <a href="/species/Chinstrap">Chinstrap</a>
+    <a href="/slider">slider</a>
+    <a href="/test-iframe">Vue iframe</a>
+</nav>
+
+<GraphicSpecies species="Adelie" title="Penguins – Adelie" />
+
+<style>
+    .species-nav {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        flex-wrap: wrap;
+    }
+    .species-nav a {
+        text-decoration: none;
+        border: 1px solid #ddd;
+        padding: 0.4rem 0.7rem;
+        border-radius: 0.5rem;
+    }
+</style>
